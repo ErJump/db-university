@@ -1,0 +1,4 @@
+1 - SELECT COUNT(*) AS `new_students` , YEAR(`enrolment_date`) AS `year` FROM `students` GROUP BY `year`;
+2 - SELECT COUNT(*) AS `n_teachers` , `office_address` FROM `teachers` GROUP BY `office_address`; 
+3 - SELECT AVG(`exam_student`.`vote`) , `exam_student`.`exam_id` FROM `exam_student` GROUP BY `exam_id`; 
+4 - SELECT COUNT(`degrees`.`name`) , `degrees`.`department_id` AS `department` FROM `degrees` GROUP BY `department`;
