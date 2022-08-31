@@ -1,6 +1,6 @@
 1 - SELECT * FROM `students` WHERE YEAR(`students`.`date_of_birth`) = 1990;
 2 - SELECT * FROM `courses` WHERE `courses`.`cfu` > 10;
-3 - SELECT * FROM `students` WHERE YEAR(`students`.`date_of_birth`) <= 1992;
+3 - SELECT * FROM `students` TIMESTAMPDIFF(YEAR, `students`.`date_of_birth`, CURDATE()) > 30;
 4 - SELECT * FROM `courses` WHERE `courses`.`period` = "I semestre" AND `year` = 1;
 5 - SELECT * FROM `exams` WHERE HOUR(`exams`.`hour`) >= 14 AND `exams`.`date` = "2020-06-20";
 6 - SELECT * FROM `degrees` WHERE `degrees`.`level` = "magistrale";
